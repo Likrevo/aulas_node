@@ -6,7 +6,7 @@ const app = express()
 const caminho = path.join(__dirname, "templates")
 
 app.get('/', (requisicao, resposta) => {
-    reposta.sendFile(`${caminho}/index.html`)
+    resposta.sendFile(`${caminho}/index.html`)
 })
 
 app.listen(3000, () => {
